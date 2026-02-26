@@ -3,6 +3,7 @@ package com.probeaufgabe.catapi.presentation.breeds
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -33,7 +34,7 @@ fun BreedListScreen(
 
                     IconButton(onClick = { viewModel.toggleSort() }) {
                         Icon(
-                            imageVector = Icons.Default.Sort,
+                            imageVector = Icons.AutoMirrored.Filled.Sort,
                             contentDescription = "Nach Gewicht sortieren",
                             tint = if (isSorted) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface
                         )
