@@ -3,6 +3,7 @@ package com.probeaufgabe.catapi
 import android.app.Application
 import com.probeaufgabe.catapi.data.di.dataModule
 import com.probeaufgabe.catapi.domain.di.domainModule
+import com.probeaufgabe.catapi.presentation.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -12,7 +13,7 @@ class CatApplication : Application() {
 
         startKoin {
             androidContext(this@CatApplication)
-            modules(dataModule, domainModule)
+            modules(dataModule, domainModule, presentationModule)
         }
     }
 }
