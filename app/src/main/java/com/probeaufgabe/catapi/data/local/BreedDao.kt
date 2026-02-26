@@ -19,7 +19,6 @@ interface BreedDao {
     @Query("SELECT * FROM breeds WHERE id = :breedId")
     fun getBreedById(breedId: String): Flow<BreedEntity?>
 
-    // Update für die Votes (+1 / -1)
     @Query("UPDATE breeds SET voteScore = voteScore + :voteChange WHERE id = :breedId")
     suspend fun updateVoteScore(breedId: String, voteChange: Int)
 
@@ -31,4 +30,3 @@ interface BreedDao {
     suspend fun clearUnmodifiedBreeds()
 
 }
-

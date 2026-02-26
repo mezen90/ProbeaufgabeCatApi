@@ -39,7 +39,7 @@ class BreedDetailViewModel(
             if (breed != null) {
                 UiState.Success(breed)
             } else {
-                UiState.Error("Katze nicht in der Datenbank gefunden.") // ID existiert nicht
+                UiState.Error("Katze nicht in der Datenbank gefunden.")
             }
         }
         .onStart { emit(UiState.Loading) }
