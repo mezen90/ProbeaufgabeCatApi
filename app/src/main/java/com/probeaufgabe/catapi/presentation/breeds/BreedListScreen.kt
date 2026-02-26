@@ -7,14 +7,13 @@ import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.paging.LoadState
 import androidx.paging.compose.collectAsLazyPagingItems
 import org.koin.androidx.compose.koinViewModel
-import androidx.compose.material.icons.filled.Sort
-import androidx.compose.runtime.getValue
 import com.probeaufgabe.catapi.presentation.breeds.components.BreedItem
 
 @OptIn(ExperimentalMaterial3Api::class)
